@@ -12,7 +12,7 @@ describe('Run build', () => {
   it('should have title', async () => {
     const heading2 = await page.waitForSelector('h1')
     const title = await heading2.evaluate((e) => e.textContent, heading2)
-    expect(title).toMatch('Welcome to Destack')
+    expect(title).toMatch('Welcome to Hubmind')
   })
   afterAll(async () => {
     await killServer(3000)
